@@ -8,7 +8,9 @@ const FormComponent = () => {
         <p className='text-xl'>Subscribe and receive updates on new products and special offers</p>
         <Form action="/" className='max-w-[700px] m-auto'>
           <label htmlFor="email"></label>
-          <input type="email" name="email" id="email" placeholder='Type your email'/>
+          <input type="email" name="email" id="email" placeholder='Type your email' required/>
+
+          <button type="submit" className='ml-2 bg-mySecondary p-4 mt-5 rounded-xl border border-mySecondary transition-colors hover:bg-hover hover:text-black'>Submit</button>
         </Form>
     </section>
   )
