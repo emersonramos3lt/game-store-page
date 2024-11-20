@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <main>
       <header>
-        <nav className="p-10">
+        <nav className="nav p-10">
           <span className="text-3xl text-white font-medium cursor-pointer transition-colors hover:text-hover">Arcade</span>
         </nav>
 
@@ -25,7 +25,7 @@ export default function Home() {
           <h2 className="text-7xl font-bold mb-8">DISCOVER THE BEST OF THE GEEK UNIVERSE</h2>
           <p className="text-xl">At Arcade, we offer a complete experience for all fans of games, manga, and comics. With a vast collection of classic and modern games, along with popular manga and comic titles, we guarantee fun and adventure for all ages and tastes. Browse our store and explore worlds of fantasy, thrilling challenges, and unforgettable stories that only geek culture can provide. Play, read, and live the excitement of our universe!</p>
 
-          <div className="mt-12">
+          <div className="button-header mt-12">
             <Button />
           </div>
 
@@ -36,7 +36,7 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="section-products max-w-[90%] m-auto mt-32" id="products">
+      <section className="section-products max-w-[90%] m-auto mt-[12rem]" id="products">
 
         <div className="header-products flex items-center justify-between mb-14">
           <h1 className="text-white text-5xl font-medium">Most popular in Arcade</h1>
@@ -77,7 +77,7 @@ export default function Home() {
 </Carousel>
       </section>
 
-      <section className="section-manga border-t border-b pb-20 mt-12">
+      <section className="section-manga border-t border-b pb-[8rem] mt-[12rem]">
         <div className="container flex justify-center items-center gap-4 max-w-[90%] m-auto mt-32">
           <div className="container-text text-white max-w-[40%]">
             <h1 className="text-3xl font-semibold mb-8"
@@ -92,25 +92,25 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="category-section max-w-[90%] m-auto mt-32 text-white">
+      <section className="category-section max-w-[90%] m-auto mt-[12rem] text-white">
 
         <h1 className="text-5xl font-semibold mb-12">VIEW BY CATEGORY</h1>
 
         <div className="grid-category grid grid-cols-3 gap-4">
-          <div className="max-w-[800px]">
+          <div className="product-container max-w-[800px]">
             <Image src="/img5.jpg" alt="Product example" title="Product category" aria-labelledby="caption-1"
             width={2000} height={2000} className="rounded-3xl category-img cursor-pointer"></Image>
-            <h2 id="caption-1" className="text-center text-xl mt-4">Computer Accessories</h2>
+            <h2 id="caption-1" className="text-center text-2xl mt-4 cursor-pointer underline underline-offset-2 transition-colors hover:text-mySecondary">Computer Accessories</h2>
           </div>
-          <div className="max-w-[800px]">
+          <div className="product-container max-w-[800px]">
             <Image src="/img4.jpg" alt="Product example"  title="Product category" aria-labelledby="caption-2"
             width={2000} height={2000} className="rounded-3xl category-img cursor-pointer"></Image>
-            <h2 id="caption-2" className="text-center text-xl mt-4">Mouses</h2>
+            <h2 id="caption-2" className="text-center text-2xl mt-4 cursor-pointer underline underline-offset-2 transition-colors hover:text-mySecondary">Mouses</h2>
           </div>
-          <div className="max-w-[800px]">
+          <div className="product-container max-w-[800px]">
             <Image src="/img6.jpg" alt="Product example" title="Product category" aria-labelledby="caption-3"
             width={2000} height={2000} className="rounded-3xl category-img cursor-pointer"></Image>
-            <h2 id="caption-3" className="text-center text-xl mt-4">Video game controller</h2>
+            <h2 id="caption-3" className="text-center text-2xl mt-4 cursor-pointer underline underline-offset-2 transition-colors hover:text-mySecondary">Video game controller</h2>
           </div>
         </div>
       </section>
