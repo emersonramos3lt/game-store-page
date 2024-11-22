@@ -6,6 +6,8 @@
   --hover: #D7F205;
   --myBackground: #010326;
   --mySecondary: #7d5cf2;
+
+
 }
 
 html {
@@ -21,6 +23,11 @@ header {
   background-size: cover;
   
   box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+}
+
+nav {
+  background: rgba(37,24,64, .95);
+  backdrop-filter: blur(8px);
 }
 
 .carousel-item {
