@@ -9,7 +9,7 @@ const Footer = () => {
           <Link href="/" className='hover:underline decoration-2 underline-offset-2 mb-3'>GAMES</Link>
           <Link href="/" className='hover:underline decoration-2 underline-offset-2 mb-3'>ABOUT AND CONTACT</Link>
 
-         <div className='flex gap-[1rem]'>
+         <div className='inline-flex flex-row items-center justify-center gap-[1rem]'>
          <Image 
           src="/instagram.svg" 
           alt='Instagram icon'
@@ -28,7 +28,7 @@ const Footer = () => {
          </div>
         </div>
 
-        <div className='flex justify-between text-white mt-[7rem]'>
+        <div className='container-footer flex justify-between text-white mt-[7rem]'>
         
         <div className='privacy-footer'>
           <Link href="/" className='privacy-link hover:underline decoration-2 underline-offset-2 mr-8 '>PRIVACY POLICY</Link>
