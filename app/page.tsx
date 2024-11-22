@@ -16,8 +16,25 @@ export default function Home() {
   return (
     <main>
       <header>
-        <nav className="nav p-10">
-          <span className="text-3xl text-white font-medium cursor-pointer transition-colors hover:text-hover">Arcade</span>
+        <nav className="nav p-[2.5rem] mb-[3rem] flex justify-between items-center">
+          <span className="flex text-[1.8rem] text-white font-medium cursor-pointer transition-colors hover:text-hover">
+          <Image 
+                src="/logo.svg" alt="Logo icon" 
+                width={40} 
+                height={40}
+                title="Arcade logo"
+                className="mr-[.5rem]">
+            </Image> ARCADE
+          </span>
+          <div className="flex items-center text-white text-xl cursor-pointer hover:text-hover">
+            0
+          <Image 
+                src="/cart.svg" alt="Shop cart icon" 
+                width={40} 
+                height={40}
+                title="Your list">
+            </Image>
+          </div>
         </nav>
 
         <div className="header-text text-white max-w-[1000px] p-5 pl-20">
@@ -94,23 +111,44 @@ export default function Home() {
 
       <section className="category-section max-w-[90%] m-auto mt-[12rem] text-white">
 
-        <h1 className="text-5xl font-semibold mb-12">VIEW BY CATEGORY</h1>
+        <h1 className="text-6xl font-semibold mb-12">VIEW BY CATEGORY</h1>
 
-        <div className="grid-category grid grid-cols-3 gap-4">
+        <div className="grid-category grid grid-cols-3 gap-[3rem]">
           <div className="product-container max-w-[800px]">
             <Image src="/img5.jpg" alt="Product example" title="Product category" aria-labelledby="caption-1"
             width={2000} height={2000} className="rounded-3xl category-img cursor-pointer"></Image>
-            <h2 id="caption-1" className="text-center text-2xl mt-4 cursor-pointer underline underline-offset-2 transition-colors hover:text-mySecondary">Computer Accessories</h2>
+            <h2 id="caption-1" className="text-center text-3xl mt-4 cursor-pointer inline-flex transition duration-500 ease-in-out hover:text-mySecondary hover:translate-x-[1rem]">
+              COMPUTER ACESSORIES
+              <Image 
+                src="/right-arrow.svg" alt="Right arrow" 
+                width={40} 
+                height={40} className="img-section ml-8">
+              </Image>
+            </h2>
           </div>
           <div className="product-container max-w-[800px]">
             <Image src="/img4.jpg" alt="Product example"  title="Product category" aria-labelledby="caption-2"
             width={2000} height={2000} className="rounded-3xl category-img cursor-pointer"></Image>
-            <h2 id="caption-2" className="text-center text-2xl mt-4 cursor-pointer underline underline-offset-2 transition-colors hover:text-mySecondary">Mouses</h2>
+            <h2 id="caption-2" className="text-center text-3xl mt-4 cursor-pointer inline-flex transition duration-500 ease-in-out hover:text-mySecondary hover:translate-x-[1rem]">
+              MOUSES AND ACESSORIES
+              <Image 
+                src="/right-arrow.svg" alt="Right arrow" 
+                width={40} 
+                height={40} className="img-section ml-8">
+              </Image>
+            </h2>
           </div>
           <div className="product-container max-w-[800px]">
             <Image src="/img6.jpg" alt="Product example" title="Product category" aria-labelledby="caption-3"
             width={2000} height={2000} className="rounded-3xl category-img cursor-pointer"></Image>
-            <h2 id="caption-3" className="text-center text-2xl mt-4 cursor-pointer underline underline-offset-2 transition-colors hover:text-mySecondary">Video game controller</h2>
+            <h2 id="caption-3" className="text-center text-3xl mt-4 cursor-pointer inline-flex transition duration-500 ease-in-out hover:text-mySecondary  hover:translate-x-[1rem]">
+              VIDEO GAME ACESSORIES
+              <Image 
+                src="/right-arrow.svg" alt="Right arrow" 
+                width={40} 
+                height={40} className="img-section ml-8">
+              </Image>
+            </h2>
           </div>
         </div>
       </section>
